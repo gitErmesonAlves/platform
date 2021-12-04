@@ -105,7 +105,6 @@ function cadastrarDespesa() {
 
   window.location.reload();
 }
-window.location.reload();
 
 function carregaListaDespesas(despesas = Array(), filtro = false) {
   if (despesas.length == 0 && filtro == false) {
