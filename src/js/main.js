@@ -59,7 +59,6 @@ class Bd {
     }
 
     return despesas;
-	
   }
 
   remover(id) {
@@ -81,7 +80,6 @@ function cadastrarDespesa() {
     descricao.value,
     valor.value
   );
-
 
   if (despesa.validarDados()) {
     bd.gravar(despesa);
@@ -106,8 +104,8 @@ function cadastrarDespesa() {
   }
 
   window.location.reload();
-
 }
+window.location.reload();
 
 function carregaListaDespesas(despesas = Array(), filtro = false) {
   if (despesas.length == 0 && filtro == false) {
@@ -165,18 +163,14 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
     div.className = "text-muted";
     let valor_number = parseFloat(d.valor);
 
-	console.log(d);
-	console.log(d.valor += d.valor);
+    console.log(d);
+    console.log((d.valor += d.valor));
 
-	
     div.innerHTML = `<span>R$ ${valor_number},00</span>`;
     linha.insertCell(3).append(div);
     // document.getElementById(
     //   "span"
     // ).innerHTML = `Total: ${valor_number}`;
-
-
-
 
     //Criar o botão de exclusão
     let btn = document.createElement("button");
@@ -192,6 +186,4 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
     linha.insertCell(4).append(btn);
   });
 }
-
-
-
+window.location.reload();
